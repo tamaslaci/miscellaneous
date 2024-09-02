@@ -61,7 +61,7 @@ assort_item assort_evens(const std::vector<int>& numbers);
 std::vector<int> assort_evens_dynamic(const std::vector<int>& numbers);
 
 // 8.
-// ASSORT_APART
+// ASSORT_APART / DISTRIBUTE
 struct assort_apart_item{
     int count;
     std::vector<int> items_y;

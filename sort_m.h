@@ -37,7 +37,7 @@ struct found_item{
     int index;
 };
 
-found_item logarithmic_search(const std::vector<int> numbers, const int value);
+found_item linear_search(const std::vector<int> numbers, const int value);
 
 found_item binary_search(const std::vector<int> numbers, const int value);
 

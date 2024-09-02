@@ -133,7 +133,7 @@ std::vector<int> counting_sort(std::vector<int>& numbers){                      
 // Searching in sorted sequence
 //
 
-found_item logarithmic_search(const std::vector<int> numbers, const int value){     // input: N, X[1..N], Y (value)
+found_item linear_search(const std::vector<int> numbers, const int value){     // input: N, X[1..N], Y (value)
     int i = 0;                                                                      // i := 1
     while(i < numbers.size() && numbers.at(i) < value){                             // i <= N and X[i] < Y
         ++i;                                                                        // i := i + 1
@@ -282,17 +282,17 @@ int main(){
     std::cout << std::endl;
     std::cout << std::endl;
 
-    std::cout << "10. Logarithmic search on ordered sequence" << std::endl;
+    std::cout << "10. Linear search on ordered sequence" << std::endl;
     std::cout << "Initial number sequence: ";
     simple_swap_sort(numbers);
     print_vector(numbers);
     std::cout << std::endl;
-    int LOGARITHMIC_SEARCHED_NUMBER = 10;
-    found_item logarithmic_item = logarithmic_search(numbers, LOGARITHMIC_SEARCHED_NUMBER);
-    std::cout << "The number: " << LOGARITHMIC_SEARCHED_NUMBER
-                                << (logarithmic_item.found ? " can " : " can't ") << "be found in the sequence";
+    int LINEAR_SEARCHED_NUMBER = 10;
+    found_item linear_item = linear_search(numbers, LINEAR_SEARCHED_NUMBER);
+    std::cout << "The number: " << LINEAR_SEARCHED_NUMBER
+                                << (linear_item.found ? " can " : " can't ") << "be found in the sequence";
     std::cout << std::endl;
-    logarithmic_item.found ? std::cout << "On position: " << logarithmic_item.index + 1 << std::endl : std::cout << "";
+    linear_item.found ? std::cout << "On position: " << linear_item.index + 1 << std::endl : std::cout << "";
     std::cout << std::endl;
 
     std::cout << "11. Binary search on ordered sequence" << std::endl;

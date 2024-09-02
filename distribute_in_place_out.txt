@@ -1,0 +1,23 @@
+
+Distribute a number sequence in place as evens and odds
+(first part evens, second part odds)
+
+Initial number sequence:
+< 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 >
+
+Sorted number sequence:
+< 20 2 18 4 16 6 14 8 12 10 1 11 13 9 15 7 17 5 19 3 >
+Number of evens: 10
+Number of odds: 10
+
+
+Checking function with full of evens:
+< 20 4 6 8 10 12 14 16 18 2 >
+Number of evens: 10
+Number of odds: 0
+
+
+Checking function with full of odds:
+< 1 3 5 7 9 11 13 15 17 19 >
+Number of evens: 0
+Number of odds: 10

@@ -137,7 +137,7 @@ std::vector<int> assort_evens_dynamic(const std::vector<int>& numbers){ // input
 }
 
 // 8.
-// ASSORT_APART
+// ASSORT_APART / DISTRIBUTE
 
 assort_apart_item assort_numbers(const std::vector<int>& numbers){      // input: N, X[1..N], T:H -> L
     std::vector<int> items_y;                                           // Y()
@@ -256,7 +256,7 @@ int main(){
 
     // Assort apart numbers from a sequence as odd and even numbers
     assort_apart_item assorted_numbers = assort_numbers(numbers_unordered);
-    std::cout << "ASSORT APART" << std::endl;
+    std::cout << "ASSORT APART / DISTRIBUTE" << std::endl;
     std::cout << "Assort the numbers from an undordered sequence (< 4 6 8 9 1 2 5 3 7 >), as evens and odds:" << std::endl;
     std::cout << "Evens: ";
     print_vector(assorted_numbers.items_y);

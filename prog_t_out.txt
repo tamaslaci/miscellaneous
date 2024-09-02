@@ -20,7 +20,7 @@ Given number sequence: < 4 6 8 9 1 2 5 3 7 >
 The number sequence has only positive numbers!
 
 SELECT
-Given string sequence: 
+Given string sequence:
 < apple peach grapes strawberry raspberry grapefruit pineapple >
 The string sequence contains: grapefruit on position: 6
 
@@ -36,7 +36,7 @@ Numbers: < 4 6 8 2 > number of items: 4
 Assort the even numbers from an ordered sequence (< 1 2 3 4 5 6 7 8 9 >) to a dynamic array:
 Numbers: < 2 4 6 8 >
 
-ASSORT APART
+ASSORT APART / DISTRIBUTE
 Assort the numbers from an undordered sequence (< 4 6 8 9 1 2 5 3 7 >), as evens and odds:
 Evens: < 4 6 8 2 >
 Odds: < 9 1 5 3 7 >
