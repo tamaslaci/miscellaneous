@@ -108,7 +108,7 @@ std::vector<int> counting_division_sort(const std::vector<int> numbers, int max_
         result.at(first_element.at(numbers.at(i))) = numbers.at(i);                     // Y[First[X[i]]] := X[i]
         first_element.at(numbers.at(i)) = first_element.at(numbers.at(i)) + 1;          // First[X[i]] := First[X[i]] + 1
     }
-    return result;                                                              // output: Y[1..N]
+    return result;                                                                      // output: Y[1..N]
 }
 
 std::vector<int> counting_sort(std::vector<int>& numbers){                      // input: N, X[1..N]
@@ -133,7 +133,7 @@ std::vector<int> counting_sort(std::vector<int>& numbers){                      
 // Searching in sorted sequence
 //
 
-found_item linear_search(const std::vector<int> numbers, const int value){     // input: N, X[1..N], Y (value)
+found_item linear_search(const std::vector<int> numbers, const int value){          // input: N, X[1..N], Y (value)
     int i = 0;                                                                      // i := 1
     while(i < numbers.size() && numbers.at(i) < value){                             // i <= N and X[i] < Y
         ++i;                                                                        // i := i + 1
